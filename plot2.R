@@ -6,7 +6,7 @@ subdata<-subset(data,Date="1/2/2007"|Date=="2/2/2007")
 
 rm(data)
 
-with(subdata,plot(Global_active_power,main="Global Active power",col="black",
+with(subdata,plot(Global_active_power,col="black",
 	type="l",xlab="",ylab="Global Active Power (kilowatts)"))
 
 dev.copy(png,"plot2.png")
